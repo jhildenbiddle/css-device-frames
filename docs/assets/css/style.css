@@ -1,0 +1,86 @@
+/* Base
+============================================================================= */
+figcaption {
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: smaller;
+  font-style: italic;
+  line-height: 1.4;
+  color: #999;
+}
+
+
+/* Application Frame
+============================================================================= */
+.app-frame.custom {
+  /*
+    Blue Gray Palette
+    https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+    50   #f8fafc
+    100  #f1f5f9
+    200  #e2e8f0
+    300  #cbd5e1
+    400  #94a3b8
+    500  #64748b
+    600  #475569
+    700  #334155
+    800  #1e293b
+    900  #0f172a
+  */
+  --background    : #1e293b; /* 800 */
+  --bar-background: #475569; /* 600 */
+  --border-color  : #64748b; /* 500 */
+  --button-color  : #94a3b8; /* 400 */
+  --color         : #e2e8f0; /* 200 */
+  --title-color   : #cbd5e1; /* 300 */
+  --url-background: var(--border-color);
+  --url-color     : #cbd5e1; /* 300 */
+}
+
+.app-frame.custom.wireframe {
+  --background      : none;
+  --bar-background  : none;
+  --border-color    : #94a3b8;
+  --button-color    : #94a3b8;
+  --url-background  : none;
+  --url-border-width: 1px;
+
+  border-style: dotted;
+}
+
+
+/* Demo
+============================================================================= */
+.frame-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5em;
+  margin: 1em 0;
+}
+
+.frame-grid figure,
+.frame-grid pre[data-lang] {
+  margin: 0;
+}
+
+.frame-grid [class*="padded-"] {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.frame-grid .app-frame {
+  min-height: 160px;
+  margin: 0;
+}
+
+.frame-grid .padded-custom {
+  background: linear-gradient(150deg, #475569 25%, #0f172a 75%);
+}
+
+.frame-grid .padded-dark {
+  background: linear-gradient(150deg, #525252 25%, #171717 75%);
+}
+
+.frame-grid .padded-light {
+  background: linear-gradient(150deg, #fff 25%, #f5f5f5 75%);
+}
