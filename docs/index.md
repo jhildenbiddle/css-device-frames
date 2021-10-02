@@ -498,36 +498,7 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
 
 ### Customization
 
-<!-- [defaults.css](https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/src/defaults.css ':include') -->
-
-```css
-/* Defaults
-============================================================================= */
-.app-frame {
-  --background       : #fff;
-  --bar-background   : #f7f7f7 linear-gradient(to bottom, #f7f7f7, #f2f2f2);
-  --bar-height       : 44px;
-  --border-color     : #e3e3e3;
-  --border-radius    : 8px;
-  --border-width     : 1px;
-  --box-shadow       : rgba(0, 0, 0, 0.08) 0px 10px 15px -3px, rgba(0, 0, 0, 0.03) 0px 4px 6px -2px;
-  --button-color     : initial;
-  --color            : initial;
-  --grid-columns     : auto;
-  --grid-rows        : auto;
-  --padding-h        : 20px;
-  --padding-v        : 20px;
-  --title            : initial;
-  --title-color      : #222;
-  --title-size       : 0.875em;
-  --title-weight     : 600;
-  --url              : initial;
-  --url-background   : #fff;
-  --url-border-radius: calc(var(--border-radius) * 0.6);
-  --url-border-width : 1px;
-  --url-color        : #999;
-}
-```
+[defaults.css](https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/src/application/_defaults.css ':include')
 
 ## Roadmap
 
