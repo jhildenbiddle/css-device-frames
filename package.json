@@ -43,7 +43,11 @@
         "wireframe",
         "wrapper"
     ],
-    "main": "index.js",
+    "style": "dist/device-frames.css",
+    "files": [
+        "dist",
+        "src"
+    ],
     "devDependencies": {
         "autoprefixer": "^10.3.5",
         "browser-sync": "^2.27.5",
