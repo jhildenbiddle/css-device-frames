@@ -12,17 +12,6 @@ A collection of single-element, CSS-only application and device frames with supp
 - [Documentation](https://jhildenbiddle.github.io/css-device-frames)
 - [Codepen Demo](https://codepen.io/jhildenbiddle/pen/zYzmzqX)
 
-## Screenshots
-
-<p float="left">
-  <img alt="macOS theme" src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot1.png" width="49%" style="margin-bottom: 1%;">
-  <img alt="Simple theme content" src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot2.png" width="49%" style="margin-bottom: 1%;">
-  <img alt="macOS theme" src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot3.png" width="49%" style="margin-bottom: 1%;">
-  <img alt="Simple theme content" src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot4.png" width="49%" style="margin-bottom: 1%;">
-  <img alt="macOS theme" src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot5.png" width="49%">
-  <img alt="Simple theme content" src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot6.png" width="49%">
-</p>
-
 ## Features
 
 - Single-element application and device frames
@@ -35,15 +24,15 @@ A collection of single-element, CSS-only application and device frames with supp
 
 #### Browser Support
 
-<img src="assets/img/chrome.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Chrome 71+
+<img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/chrome.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Chrome 71+
 <br>
-<img src="assets/img/edge.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Edge 80+
+<img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/edge.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Edge 80+
 <br>
-<img src="assets/img/firefox.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Firefox 64+
+<img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/firefox.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Firefox 64+
 <br>
-<img src="assets/img/safari.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Safari 12.1+
+<img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/safari.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Safari 12.1+
 <br>
-<img src="assets/img/ie.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Not supported
+<img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/ie.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Not supported
 
 ## Support
 
