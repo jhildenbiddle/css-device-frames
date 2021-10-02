@@ -1,6 +1,6 @@
 {
     "name": "css-device-frames",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "author": "John Hildenbiddle",
     "description": "A collection of single-element, CSS-only application and device frames with support for multiple themes, customization via CSS custom properties, grid-based layouts, iframe elements, and scrolling content.",
     "license": "MIT",
