@@ -109,16 +109,16 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
 1. Add the CSS Device Frames stylesheet to project. See [Installation](#installation) for details on loading from a CDN.
 
    ```html
-   <link rel="stylesheet" href="path/to/device-frames.css">
+   <link rel="stylesheet" href="path/to/device-frames.min.css">
    ```
 
    ```css
-   @import "path/to/device-frames.css";
+   @import "path/to/device-frames.min.css";
    ```
 
    ```scss
    // Sass 1.2.3+
-   @use "path/to/device-frames.css";
+   @use "node_modules/css-device-frames/dist/device-frames.css";
    ```
 
 1. Apply the `app-frame` CSS class to any HTML element (excluding [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)).
