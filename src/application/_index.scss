@@ -117,7 +117,6 @@
 
         // Ready for CSS Grid
         grid-column: 1 / -1;
-        width: calc(100% + (var(--padding-h, 0px) * 2));
     }
 
     // Mac
@@ -318,6 +317,7 @@
         border: 0;
 
         &::before {
+            margin: 0;
             border: var(--border-width) solid var(--border-color);
             border-top-left-radius: var(--border-radius);
             border-top-right-radius: var(--border-radius);
@@ -327,7 +327,7 @@
             display: block;
             max-width: 100%;
             width: 100%;
-            margin: 0 0 calc(0px - var(--border-width)) 0;
+            margin: 0;
         }
     }
 
@@ -347,14 +347,14 @@
     &.scrolling {
         display: grid;
         align-items: stretch;
+        padding: 0 !important;
+
+        &::before {
+            margin: 0;
+        }
 
         > :only-child {
-            position: relative;
-            top: calc(0px - var(--padding-v));
-            left: calc(0px - var(--padding-h));
-            width: calc(100% + (var(--padding-h) * 2));
             overflow: auto;
-            margin-bottom: calc(0px - var(--padding-v) * 2);
             padding: var(--padding-v) var(--padding-h);
         }
     }
