@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.2
+
+*2021-10-04*
+
+- Fix bar width with grid-based scrolling content
+
 ## 1.0.1
 
 *2021-10-02*
