@@ -83,10 +83,10 @@ npm install css-device-frames
 
 #### CDN
 
-Please note the `@1` version lock in the URL below. This prevents breaking changes in new versions from affecting your project. When a new major version is released, you will need to manually update your CDN URLs by changing the version after the `@` symbol.
+Please note the `@1` version lock in the URL below. This prevents breaking changes in future releases from affecting your project and is therefore the safest method of loading dependencies from a CDN. When a new major version is released, you will need to manually update your CDN URLs by changing the version after the `@` symbol.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-device-frames@1/dist/device-frames.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-device-frames@1/dist/device-frames.min.css">
 ```
 
 #### Git
@@ -106,14 +106,14 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
 
 ## Usage
 
-1. Add the CSS Device Frames stylesheet to project. See [Installation](#installation) for details on loading from a CDN.
+1. Add the CSS Device Frames stylesheet to your project. See [Installation](#installation) for details on loading from a CDN.
 
    ```html
-   <link rel="stylesheet" href="path/to/device-frames.min.css">
+   <link rel="stylesheet" href="path/to/device-frames.css">
    ```
 
    ```css
-   @import "path/to/device-frames.min.css";
+   @import "path/to/device-frames.css";
    ```
 
    ```scss
@@ -142,7 +142,7 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
    </figure>
    ```
 
-1. Apply additional [theme classes](#themes) to modify the frame style.
+1. Apply preset [theme classes](#themes) to modify the frame style.
 
    <div class="frame-grid">
      <div class="app-frame mac dark">
@@ -188,7 +188,7 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
    </figure>
    ```
 
-1. Review the [Content](#content) for content alignment/justification, grid-based layouts, and scrolling content.
+1. Review the [Content](#content) section for scrolling and grid-based content.
 
    <div class="frame-grid">
      <div class="app-frame mac dark scrolling" data-url="my-domain.com">
@@ -197,18 +197,35 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
           <p>Carl Sagan - <em>Pale Blue Dot</em></p>
        </div>
      </div>
+
+     <figure class="app-frame win" data-title="Centered Content" style="
+       display: grid;
+       align-items: center;
+       justify-items: center;
+     ">
+       <span style="font-size: 3em;">🎯</span>
+     </figure>
    </div>
 
    ```html
-   <!-- Apply "scrolling" class and "height" value -->
+   <!-- Scrolling content -->
    <div class="app-frame mac dark scrolling" data-url="my-domain.com">
      <div style="height: 12em;">
        ...
      </div>
    </div>
+
+   <!-- Centered content using CSS Grid -->
+   <figure class="app-frame win" data-title="Centered Content" style="
+     display: grid;
+     align-items: center;
+     justify-items: center;
+   ">
+     <span style="font-size: 3em;">🎯</span>
+   </figure>
    ```
 
-1. Customize frame styles using CSS custom properties (see [Customization](#customization) for details).
+1. Review the [Customization](#customization) section to modify or create custom themes.
 
    <div class="frame-grid">
      <div class="app-frame mac custom scrolling" data-url="my-domain.com">
@@ -217,6 +234,11 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
           <p>Carl Sagan - <em>Pale Blue Dot</em></p>
        </div>
      </div>
+
+     <div class="padded-custom" style="display: grid;">
+       <figure class="app-frame win custom wireframe" data-title="Custom Wireframe">
+       </figure>
+     </div>
    </div>
 
    ```html
@@ -224,6 +246,11 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
    <div class="app-frame mac custom scrolling" data-url="my-domain.com">
      ...
    </div>
+
+   <!-- Apply "custom" and "wireframe" themes -->
+   <figure class="app-frame win custom wireframe" data-title="Custom Wireframe">
+     ...
+   </figure>
    ```
 
    ```css
@@ -235,6 +262,17 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
      --title-color   : #cbd5e1;
      --url-background: var(--border-color);
      --url-color     : #cbd5e1;
+   }
+
+   .app-frame.custom.wireframe {
+     --background      : none;
+     --bar-background  : none;
+     --border-color    : #94a3b8;
+     --button-color    : #94a3b8;
+     --url-background  : none;
+     --url-border-width: 1px;
+
+     border-style: dotted;
    }
    ```
 
@@ -481,6 +519,7 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
 </div>
 
 ```html
+<!-- Height defined on frame -->
 <div class="app-frame mac scrolling" style="height: 15em;">
   <div>
     ...
@@ -490,7 +529,8 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
 
 ```html
 <div class="app-frame mac scrolling">
-  <div style="height: 250px;">
+  <!-- Height defined on content wrapper -->
+  <div style="height: 15em;">
     ...
   </div>
 </div>
