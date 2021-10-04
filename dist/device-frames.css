@@ -96,6 +96,7 @@
   border-top-right-radius: calc(var(--border-radius) - var(--border-width));
   background: var(--bar-background);
   grid-column: 1/-1;
+  width: calc(100% + var(--padding-h, 0px) * 2);
 }
 .app-frame.mac::before {
   background: radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 0.5) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-theme, #ff5f57)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 1.5 + var(--button-gap)) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-theme, #febc2e)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 2.5 + var(--button-gap) * 2) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-theme, #28c840)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), var(--bar-background);
@@ -192,6 +193,7 @@
   padding: 0 !important;
 }
 .app-frame.scrolling::before {
+  width: auto;
   margin: 0;
 }
 .app-frame.scrolling > :only-child {
