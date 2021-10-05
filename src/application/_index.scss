@@ -57,12 +57,26 @@
         --url-inset          : var(--title-inset);
     }
 
-    // Global button color override
-    &:not(.mac) {
-        --button-color-theme: var(--button-color, #ccc);
+    // Global Overrides
+    // These "default" values allow top-level declarations to override
+    // declarations with higher specificity due to nesting.
+    // Ex: Top-level --button-color should override theme value
+    &.win {
+        --button-color-default: #ccc;
     }
-    &.dark:not(.mac:not(.wireframe)) {
-        --button-color-theme: var(--button-color, var(--border-color));
+
+    &.dark {
+        &.win {
+            --button-color-default: #a3a3a3;
+        }
+    }
+
+    &.wireframe {
+        --button-color-default: #d4d4d4;
+
+        &.dark {
+            --button-color-default: var(--border-color);
+        }
     }
 
 
@@ -128,21 +142,21 @@
             radial-gradient(
                 circle at
                 calc(var(--button-inset) + (var(--button-size) * 0.5)) calc(var(--bar-height) / 2),
-                var(--button-color, var(--button-color-theme, #ff5f57)) calc(var(--button-size) / 2),
+                var(--button-color, var(--button-color-default, #ff5f57)) calc(var(--button-size) / 2),
                 transparent calc(var(--button-size) / 2)
             ),
             // Button 2
             radial-gradient(
                 circle at
                 calc(var(--button-inset) + (var(--button-size) * 1.5) + var(--button-gap)) calc(var(--bar-height) / 2),
-                var(--button-color, var(--button-color-theme, #febc2e)) calc(var(--button-size) / 2),
+                var(--button-color, var(--button-color-default, #febc2e)) calc(var(--button-size) / 2),
                 transparent calc(var(--button-size) / 2)
             ),
             // Button 3
             radial-gradient(
                 circle at
                 calc(var(--button-inset) + (var(--button-size) * 2.5) + (var(--button-gap) * 2)) calc(var(--bar-height) / 2),
-                var(--button-color, var(--button-color-theme, #28c840)) calc(var(--button-size) / 2),
+                var(--button-color, var(--button-color-default, #28c840)) calc(var(--button-size) / 2),
                 transparent calc(var(--button-size) / 2)
             ),
             var(--bar-background);
@@ -160,7 +174,7 @@
                 0deg,
                 transparent
                 calc((var(--button-size) / 2) - (var(--button-stroke-width) / 2)),
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 calc((var(--button-size) / 2) - (var(--button-stroke-width) / 2))
                 calc((var(--button-size) / 2) + (var(--button-stroke-width) / 2)),
                 transparent
@@ -171,23 +185,23 @@
             no-repeat calc(100% - (var(--button-inset) + var(--button-size) + var(--button-gap))) / var(--button-size) var(--button-size)
             linear-gradient(
                 0deg,
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 var(--button-stroke-width),
                 transparent
                 var(--button-stroke-width)
                 calc(var(--button-size) - var(--button-stroke-width)),
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 calc(var(--button-size) - var(--button-stroke-width))
             ),
             no-repeat calc(100% - (var(--button-inset) + var(--button-size) + var(--button-gap))) / var(--button-size) var(--button-size)
             linear-gradient(
                 90deg,
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 var(--button-stroke-width),
                 transparent
                 var(--button-stroke-width)
                 calc(var(--button-size) - var(--button-stroke-width)),
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 calc(var(--button-size) - var(--button-stroke-width))
             ),
             // Close
@@ -197,7 +211,7 @@
                 45deg,
                 transparent
                 calc((var(--button-size) * 0.7225) - var(--button-stroke-width)),
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 calc((var(--button-size) * 0.7225) - var(--button-stroke-width))
                 calc((var(--button-size) * 0.7225) + (var(--button-stroke-width) * 0.7225)),
                 transparent
@@ -208,7 +222,7 @@
                 135deg,
                 transparent
                 calc((var(--button-size) * 0.7225) - var(--button-stroke-width)),
-                var(--button-color-theme)
+                var(--button-color, var(--button-color-default))
                 calc((var(--button-size) * 0.7225) - var(--button-stroke-width))
                 calc((var(--button-size) * 0.7225) + (var(--button-stroke-width) * 0.7225)),
                 transparent

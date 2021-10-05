@@ -72,11 +72,17 @@
   --title-inset: calc((var(--button-inset) * 2) + (var(--button-size) * 3) + (var(--button-gap) * 2));
   --url-inset: var(--title-inset);
 }
-.app-frame:not(.mac) {
-  --button-color-theme: var(--button-color, #ccc);
+.app-frame.win {
+  --button-color-default: #ccc;
 }
-.app-frame.dark:not(.mac:not(.wireframe)) {
-  --button-color-theme: var(--button-color, var(--border-color));
+.app-frame.dark.win {
+  --button-color-default: #a3a3a3;
+}
+.app-frame.wireframe {
+  --button-color-default: #d4d4d4;
+}
+.app-frame.wireframe.dark {
+  --button-color-default: var(--border-color);
 }
 .app-frame, .app-frame::before, .app-frame::after {
   box-sizing: border-box;
@@ -99,10 +105,10 @@
   width: calc(100% + var(--padding-h, 0px) * 2);
 }
 .app-frame.mac::before {
-  background: radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 0.5) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-theme, #ff5f57)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 1.5 + var(--button-gap)) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-theme, #febc2e)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 2.5 + var(--button-gap) * 2) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-theme, #28c840)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), var(--bar-background);
+  background: radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 0.5) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-default, #ff5f57)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 1.5 + var(--button-gap)) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-default, #febc2e)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), radial-gradient(circle at calc(var(--button-inset) + var(--button-size) * 2.5 + var(--button-gap) * 2) calc(var(--bar-height) / 2), var(--button-color, var(--button-color-default, #28c840)) calc(var(--button-size) / 2), transparent calc(var(--button-size) / 2)), var(--bar-background);
 }
 .app-frame.win::before {
-  background: no-repeat calc(100% - (var(--button-inset) + var(--button-size) * 2 + var(--button-gap) * 2))/var(--button-size) var(--button-size) linear-gradient(0deg, transparent calc(var(--button-size) / 2 - var(--button-stroke-width) / 2), var(--button-color-theme) calc(var(--button-size) / 2 - var(--button-stroke-width) / 2) calc(var(--button-size) / 2 + var(--button-stroke-width) / 2), transparent calc(var(--button-size) / 2 + var(--button-stroke-width) / 2)), no-repeat calc(100% - (var(--button-inset) + var(--button-size) + var(--button-gap)))/var(--button-size) var(--button-size) linear-gradient(0deg, var(--button-color-theme) var(--button-stroke-width), transparent var(--button-stroke-width) calc(var(--button-size) - var(--button-stroke-width)), var(--button-color-theme) calc(var(--button-size) - var(--button-stroke-width))), no-repeat calc(100% - (var(--button-inset) + var(--button-size) + var(--button-gap)))/var(--button-size) var(--button-size) linear-gradient(90deg, var(--button-color-theme) var(--button-stroke-width), transparent var(--button-stroke-width) calc(var(--button-size) - var(--button-stroke-width)), var(--button-color-theme) calc(var(--button-size) - var(--button-stroke-width))), no-repeat calc(100% - var(--button-inset))/var(--button-size) var(--button-size) linear-gradient(45deg, transparent calc(var(--button-size) * 0.7225 - var(--button-stroke-width)), var(--button-color-theme) calc(var(--button-size) * 0.7225 - var(--button-stroke-width)) calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225), transparent calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225)), no-repeat calc(100% - var(--button-inset))/var(--button-size) var(--button-size) linear-gradient(135deg, transparent calc(var(--button-size) * 0.7225 - var(--button-stroke-width)), var(--button-color-theme) calc(var(--button-size) * 0.7225 - var(--button-stroke-width)) calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225), transparent calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225)), var(--bar-background);
+  background: no-repeat calc(100% - (var(--button-inset) + var(--button-size) * 2 + var(--button-gap) * 2))/var(--button-size) var(--button-size) linear-gradient(0deg, transparent calc(var(--button-size) / 2 - var(--button-stroke-width) / 2), var(--button-color, var(--button-color-default)) calc(var(--button-size) / 2 - var(--button-stroke-width) / 2) calc(var(--button-size) / 2 + var(--button-stroke-width) / 2), transparent calc(var(--button-size) / 2 + var(--button-stroke-width) / 2)), no-repeat calc(100% - (var(--button-inset) + var(--button-size) + var(--button-gap)))/var(--button-size) var(--button-size) linear-gradient(0deg, var(--button-color, var(--button-color-default)) var(--button-stroke-width), transparent var(--button-stroke-width) calc(var(--button-size) - var(--button-stroke-width)), var(--button-color, var(--button-color-default)) calc(var(--button-size) - var(--button-stroke-width))), no-repeat calc(100% - (var(--button-inset) + var(--button-size) + var(--button-gap)))/var(--button-size) var(--button-size) linear-gradient(90deg, var(--button-color, var(--button-color-default)) var(--button-stroke-width), transparent var(--button-stroke-width) calc(var(--button-size) - var(--button-stroke-width)), var(--button-color, var(--button-color-default)) calc(var(--button-size) - var(--button-stroke-width))), no-repeat calc(100% - var(--button-inset))/var(--button-size) var(--button-size) linear-gradient(45deg, transparent calc(var(--button-size) * 0.7225 - var(--button-stroke-width)), var(--button-color, var(--button-color-default)) calc(var(--button-size) * 0.7225 - var(--button-stroke-width)) calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225), transparent calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225)), no-repeat calc(100% - var(--button-inset))/var(--button-size) var(--button-size) linear-gradient(135deg, transparent calc(var(--button-size) * 0.7225 - var(--button-stroke-width)), var(--button-color, var(--button-color-default)) calc(var(--button-size) * 0.7225 - var(--button-stroke-width)) calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225), transparent calc(var(--button-size) * 0.7225 + var(--button-stroke-width) * 0.7225)), var(--bar-background);
 }
 .app-frame::after {
   content: "";
