@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.0.3
+
+*2022-07-29*
+
+- Fix mac wireframe & win dark button colors
+- Update default light and dark styles
+
 ## 1.0.2
 
 *2021-10-04*
