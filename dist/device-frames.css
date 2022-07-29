@@ -1,7 +1,7 @@
 .app-frame {
   /* Defaults */
   --background: #fff;
-  --bar-background: #f7f7f7 linear-gradient(to bottom, #f7f7f7, #f2f2f2);
+  --bar-background: #f4f4f4 linear-gradient(to bottom, #fafafa, #f4f4f4);
   --bar-height: 44px;
   --border-color: #e3e3e3;
   --border-radius: 8px;
@@ -44,11 +44,12 @@
 }
 .app-frame.dark {
   --background: #262626;
-  --bar-background: #404040;
-  --border-color: #737373;
+  --bar-background: #404040 linear-gradient(to bottom, #525252, #404040);
+  --border-color: #525252;
   --color: #f5f5f5;
   --title-color: #d4d4d4;
-  --url-background: var(--border-color);
+  --url-background: #737373;
+  --url-border-width: 0;
   --url-color: #d4d4d4;
 }
 .app-frame.wireframe {
@@ -209,7 +210,7 @@
 
 /*! CSS Device Frames v1.0.2
  *  https://github.com/jhildenbiddle/css-device-frames#readme
- *  (c) 2021 John Hildenbiddle
+ *  (c) 2021-2022 John Hildenbiddle
  *  MIT license
  */
 

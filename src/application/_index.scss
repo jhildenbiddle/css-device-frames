@@ -16,13 +16,14 @@
         // 700  #404040
         // 800  #262626
         // 900  #171717
-        --background    : #262626; // 800
-        --bar-background: #404040; // 700
-        --border-color  : #737373; // 500
-        --color         : #f5f5f5; // 100
-        --title-color   : #d4d4d4; // 300
-        --url-background: var(--border-color);
-        --url-color     : #d4d4d4; // 300
+        --background      : #262626; // 800
+        --bar-background  : #404040 linear-gradient(to bottom, #525252, #404040); // 700 to 600
+        --border-color    : #525252; // 600
+        --color           : #f5f5f5; // 100
+        --title-color     : #d4d4d4; // 300
+        --url-background  : #737373; // 500
+        --url-border-width: 0;
+        --url-color       : #d4d4d4; // 300
     }
 
     &.wireframe {
