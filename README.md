@@ -14,7 +14,14 @@ A collection of single-element, CSS-only application and device frames with supp
 
 #### Examples
 
-![Frame Screenshots](https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot.png)
+<p>
+  <a href="https://jhildenbiddle.github.io/css-device-frames">
+    <picture>
+      <source srcset="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot.webp" type="image/webp">
+      <img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot.png" alt="Screenshot of CSS device frames" width="790">
+    </picture>
+  </a>
+</p>
 
 ## Features
 
