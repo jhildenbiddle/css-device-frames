@@ -33,10 +33,6 @@ A collection of single-element, CSS-only application and device frames with supp
 - Scrollable frame content
 - `<iframe>` support for external frame content
 
-## Usage & Options
-
-See the [documentation site](https://jhildenbiddle.github.io/css-device-frames) for details.
-
 #### Browser Support
 
 <img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/chrome.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Chrome 71+
@@ -48,6 +44,10 @@ See the [documentation site](https://jhildenbiddle.github.io/css-device-frames) 
 <img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/safari.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Safari 12.1+
 <br>
 <img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/ie.svg" style="margin-right: 0.4em; vertical-align: text-bottom;"> Not supported
+
+## Usage & Options
+
+See the [documentation site](https://jhildenbiddle.github.io/css-device-frames) for details.
 
 ## Support
 
