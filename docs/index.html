@@ -11,12 +11,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-device-frames/dist/device-frames.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81ZW8Q90GJ"></script>
+    <script>
+        if (location.hostname !== 'localhost') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-81ZW8Q90GJ'); // cspell: disable-line
+        }
+    </script>
 </head>
 
 <body>
     <div id="app"></div>
 
-    <!-- JavaScript -->
+    <style>
+        /* docsify-plugin-ethicalads (temporary) */
+        :root {
+            --ea-sidebar-inset: var(--sidebar-width);
+            --ea-sidebar-toggle-inset: 0;
+        }
+
+        .sidebar {
+            --ea-background: hsl(var(--mono-hue), var(--mono-saturation), 94%);
+            --ea-callout-background: hsl(var(--mono-hue), var(--mono-saturation), 89%);
+            --ea-margin: 1em 0 0 0;
+        }
+
+        .sidebar [data-ea-publisher][class].flat {
+            --ea-margin: 0 -25px;
+        }
+    </style>
+
     <script>
         window.$docsify = {
             // GENERAL
@@ -37,6 +65,9 @@
 
             // PLUGINS
             // -----------------------------------------------------------------
+            ethicalAds: {
+                eaPublisher: 'jhildenbiddle-github-io'
+            },
             executeScript: true,
             search     : {
                 depth      : 3,
@@ -47,22 +78,12 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-scss.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81ZW8Q90GJ"></script>
-    <script>
-        if (location.hostname !== 'localhost') {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-81ZW8Q90GJ');
-        }
-    </script>
 </body>
 </html>
