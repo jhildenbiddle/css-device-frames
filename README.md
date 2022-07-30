@@ -49,7 +49,7 @@ A collection of single-element, CSS-only application and device frames with supp
 
 See the [documentation site](https://jhildenbiddle.github.io/css-device-frames) for details.
 
-## Support
+## Contact & Support
 
 - Create a 💬 [Github issue](https://github.com/jhildenbiddle/css-device-frames/issues) for bug reports, feature requests, or questions
 - Follow [@jhildenbiddle](https://twitter.com/jhildenbiddle) for announcements

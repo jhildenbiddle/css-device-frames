@@ -561,7 +561,7 @@ Project documentation is available at [http://localhost:3000](http://localhost:3
 - [ ] Laptop frame
 - [ ] Desktop frame
 
-## Support
+## Contact & Support
 
 - Create a 💬 [Github issue](https://github.com/jhildenbiddle/css-device-frames/issues) for bug reports, feature requests, or questions
 - Follow [@jhildenbiddle](https://twitter.com/jhildenbiddle) for announcements
