@@ -83,11 +83,11 @@ npm install css-device-frames
 
 #### CDN
 
-Please note the `@1` version lock in the URL below. This prevents breaking changes in future releases from affecting your project and is therefore the safest method of loading dependencies from a CDN. When a new major version is released, you will need to manually update your CDN URLs by changing the version after the `@` symbol.
-
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-device-frames@1/dist/device-frames.min.css">
 ```
+
+!> Note the `@` version lock in the URL above. This prevents breaking changes in future releases from affecting your project and is therefore the safest method of loading dependencies from a CDN. When a new major version is released, you will need to manually update your CDN URLs by changing the version after the `@` symbol.
 
 #### Git
 
