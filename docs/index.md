@@ -75,13 +75,15 @@ A collection of single-element, CSS-only application and device frames with supp
 
 ## Installation
 
-#### NPM
+**NPM**
 
 ```bash
 npm install css-device-frames
 ```
 
-#### CDN
+**CDN**
+
+Available on [jsdelivr](https://www.jsdelivr.com/package/npm/css-device-frames) (below), [unpkg](https://unpkg.com/browse/css-device-frames/), and other CDN services that auto-publish npm packages.
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-device-frames@1/dist/device-frames.min.css">
