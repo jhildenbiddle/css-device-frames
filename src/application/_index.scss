@@ -91,6 +91,7 @@
 
     display: block;
     position: relative;
+    overflow: auto;
     margin: 1em 0;
     box-shadow: var(--box-shadow);
 
@@ -329,7 +330,6 @@
         --padding-h: 0px;
         --padding-v: 0px;
 
-        overflow: hidden;
         border: 0;
 
         &::before {

@@ -31,6 +31,7 @@
   --url-inset: 10px;
   display: block;
   position: relative;
+  overflow: auto;
   margin: 1em 0;
   box-shadow: var(--box-shadow);
   padding: var(--padding-v, 0) var(--padding-h, 0) !important;
@@ -171,7 +172,6 @@
 .app-frame.borderless {
   --padding-h: 0px;
   --padding-v: 0px;
-  overflow: hidden;
   border: 0;
 }
 .app-frame.borderless::before {
