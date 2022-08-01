@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.5
+
+*2022-08-01*
+
+- Fix rounded corder overflow bug when `--padding-[v|h]` set to `0`
+
 ## 1.0.4
 
 *2022-07-29*
