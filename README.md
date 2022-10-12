@@ -3,9 +3,9 @@
 [![NPM](https://img.shields.io/npm/v/css-device-frames.svg?style=flat-square)](https://www.npmjs.com/package/css-device-frames)
 [![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/jhildenbiddle/css-device-frames/Build/master?label=checks&style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/actions?query=branch%3Amaster+)
 [![Codacy grade](https://img.shields.io/codacy/grade/250567c7cf2047999f0ff2bba69a45a6?style=flat-square)](https://app.codacy.com/gh/jhildenbiddle/css-device-frames/dashboard)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/blob/master/LICENSE)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/css-device-frames/badge)](https://www.jsdelivr.com/package/npm/css-device-frames)
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fcss-device-frames&hashtags=css,developers,frontend)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/blob/master/LICENSE)
+[![Sponsor this project](https://img.shields.io/static/v1?style=flat-square&label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/jhildenbiddle)
 
 A collection of single-element, CSS-only application and device frames with support for multiple themes, customization via CSS custom properties, grid-based layouts, `<iframe>` elements, and scrolling content.
 
@@ -49,11 +49,20 @@ A collection of single-element, CSS-only application and device frames with supp
 
 See the [documentation site](https://jhildenbiddle.github.io/css-device-frames) for details.
 
+## Sponsorship
+
+A [sponsorship](https://github.com/sponsors/jhildenbiddle) is more than just a way to show appreciation for the open-source authors and projects we rely on; it can be the spark that ignites the next big idea, the inspiration to create something new, and the motivation to share so that others may benefit.
+
+If you benefit from this project, please consider lending your support and encouraging future efforts by [becoming a sponsor](https://github.com/sponsors/jhildenbiddle).
+
+Thank you! 🙏🏻
+
 ## Contact & Support
 
-- Create a 💬 [Github issue](https://github.com/jhildenbiddle/css-device-frames/issues) for bug reports, feature requests, or questions
-- Follow [@jhildenbiddle](https://twitter.com/jhildenbiddle) for announcements
-- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/css-device-frames) or 🐦 [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fcss-device-frames&hashtags=css,developers,frontend) to support the project!
+- Follow 👨🏻‍💻 **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) and [GitHub](https://github.com/jhildenbiddle) for announcements
+- Create a 💬 [GitHub issue](https://github.com/jhildenbiddle/css-device-frames/issues) for bug reports, feature requests, or questions
+- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/css-device-frames) and 🐦 [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fcss-device-frames&hashtags=css,developers,frontend) to promote the project
+- Become a 💖 [sponsor](https://github.com/sponsors/jhildenbiddle) to support the project and future efforts
 
 ## License
 
