@@ -3,8 +3,8 @@
 [![NPM](https://img.shields.io/npm/v/css-device-frames.svg?style=flat-square)](https://www.npmjs.com/package/css-device-frames)
 [![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/jhildenbiddle/css-device-frames/Build/master?label=checks&style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/actions?query=branch%3Amaster+)
 [![Codacy grade](https://img.shields.io/codacy/grade/250567c7cf2047999f0ff2bba69a45a6?style=flat-square)](https://app.codacy.com/gh/jhildenbiddle/css-device-frames/dashboard)
-[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/css-device-frames/badge)](https://www.jsdelivr.com/package/npm/css-device-frames)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/blob/master/LICENSE)
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/css-device-frames/badge)](https://www.jsdelivr.com/package/npm/css-device-frames)
 [![Sponsor this project](https://img.shields.io/static/v1?style=flat-square&label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/jhildenbiddle)
 
 A collection of single-element, CSS-only application and device frames with support for multiple themes, customization via CSS custom properties, grid-based layouts, `<iframe>` elements, and scrolling content.
