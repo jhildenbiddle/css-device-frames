@@ -1,7 +1,7 @@
 # css-device-frames
 
 [![NPM](https://img.shields.io/npm/v/css-device-frames.svg?style=flat-square)](https://www.npmjs.com/package/css-device-frames)
-[![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/jhildenbiddle/css-device-frames/Build/master?label=checks&style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/actions?query=branch%3Amaster+)
+[![GitHub Workflow Status (master)](https://img.shields.io/github/actions/workflow/status/jhildenbiddle/css-device-frames/test.yml?branch=master&label=checks&style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/actions?query=branch%3Amaster+)
 [![Codacy grade](https://img.shields.io/codacy/grade/250567c7cf2047999f0ff2bba69a45a6?style=flat-square)](https://app.codacy.com/gh/jhildenbiddle/css-device-frames/dashboard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/css-device-frames/blob/master/LICENSE)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/css-device-frames/badge)](https://www.jsdelivr.com/package/npm/css-device-frames)
